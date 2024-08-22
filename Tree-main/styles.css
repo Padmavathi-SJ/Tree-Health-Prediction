@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/download.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+}
+
+.Topic {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(13, 1, 1);
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif; /* Modern and clear font */
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #000000; /* Black font color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.field-stats {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.field-stats div {
+    width: auto;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient background to match the speech button */
+    color: black;
+    border-radius: 25px; /* Rounded corners for button-like appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clear and modern font */
+    font-size: 16px; /* Slightly larger for readability */
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.field-stats div:hover {
+    background: linear-gradient(45deg, #ff6a5f, #fe8c7b); /* Slight color shift on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 50px;
+}
+
+.map-container {
+    width: 500px; /* Fixed width for the map */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 15px; /* Space between the map and content */
+}
+
+.content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text */
+}
+
+
+.info-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tree-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    gap: 10px;
+    justify-content: center;
+}
+
+#start-speech {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Combination of colors */
+    border: none;
+    color: black;
+    border-radius: 50%; /* Makes the background circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: background 0.3s, transform 0.3s;
+}
+
+#start-speech:hover {
+    background: linear-gradient(45deg, #ff6a5f, #fe8c7b); /* Slight color shift on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.tree-block {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border: 1px solid #aaa7a7;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.tree-block.good {
+    background-color: #00712D;
+    color: white;
+}
+
+.tree-block.bad {
+    background-color: #982B1C;
+    color: white;
+}
+
+.tree-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree-symbol {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree-image {
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.tree-number {
+    margin-top: 5px; /* Space between the tree block and the number */
+    font-size: 14px;
+    text-align: center;
+}
